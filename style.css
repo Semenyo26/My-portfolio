@@ -1,0 +1,212 @@
+ </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am learning web design and development.
+            I enjoy creating websites and learning new technology.
+        </p>
+
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+
+        <h2>My Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>I create simple and attractive websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Graphic Design</h3>
+                <p>I create designs for different purposes.</p>
+            </div>
+
+            <div class="card">
+                <h3>Website Development</h3>
+                <p>I build websites using HTML, CSS and JavaScript.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>You can contact me if you want to work with me.</p>
+
+        <button onclick="contactMe()">Contact Me</button>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+Now press:
+Ctrl + S
+Step 4 — Make it beautiful with CSS
+Click style.css.
+Paste:
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #222;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Home */
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: #eeeeee;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* Sections */
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+/* Button */
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+
+/* Services */
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 30%;
+    padding: 30px;
+    background: #eeeeee;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #222;
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
